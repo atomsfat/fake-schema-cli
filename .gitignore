@@ -1,0 +1,5 @@
+json-schema-faker-lambda.iml
+.idea
+node_modules
+coverage
+.nyc_output

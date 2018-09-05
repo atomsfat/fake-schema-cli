@@ -3,3 +3,4 @@ json-schema-faker-lambda.iml
 node_modules
 coverage
 .nyc_output
+fake-schema-cli.iml

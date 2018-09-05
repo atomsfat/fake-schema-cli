@@ -1,6 +1,6 @@
 {
   "name": "fake-schema-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JSON-Schema-Faker CLI",
   "main": "index.js",
   "scripts": {

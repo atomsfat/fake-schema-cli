@@ -1,0 +1,36 @@
+definitions:
+  ABC:
+    required:
+    - name
+    properties:
+      name:
+        type: string
+    type: object
+  CDE:
+    properties:
+      id:
+        type: integer
+      someLMB:
+        $ref: '#/definitions/LMN'
+    type: object
+  IJK:
+    required:
+    - id
+    properties:
+      id:
+        type: string
+    type: object
+  LMN:
+    required:
+    - code
+    properties:
+      id:
+        type: string
+        description: Describes a bussiness code of the error.
+      description:
+        type: string
+      someIJK:
+        $ref: '#/definitions/IJK'
+      someABC:
+        $ref: '#/definitions/ABC'
+    type: objec

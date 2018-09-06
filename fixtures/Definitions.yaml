@@ -7,7 +7,7 @@ definitions:
     type: integer
     minimum: 0
     minimumExclusive: true
-  user:
+  poulet:
     type: object
     properties:
       id:

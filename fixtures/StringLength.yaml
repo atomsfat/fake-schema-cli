@@ -1,0 +1,4 @@
+samples:
+  type: string
+  minLength: 100
+  maxLength: 10

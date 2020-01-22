@@ -2,7 +2,7 @@
 
 Another CLI for [json-schema-faker](https://www.npmjs.com/package/json-schema-faker). With Stdin support.
 
-Based on 
+Based on
 * https://github.com/oprogramador/json-schema-faker-cli
 * https://github.com/json-schema-faker/website-jsf
 
@@ -25,7 +25,7 @@ Based on
     -y, --yaml                       YAML input
     -h, --help                       output usage information
 
-```
+```-
 
 ## Examples (using [httpie](https://httpie.org/doc) )
 
@@ -39,17 +39,17 @@ Based on
 
 * Faking remotes JSON Schemes
 
-` http http://json-schema.org/learn/examples/address.schema.json | fake-schema  
-`
+` http https://json-schema.org/learn/examples/address.schema.json | fake-schema
+` curl --silent https://json-schema.org/learn/examples/address.schema.json | fake-schema
 
-* Update result 
+* Update result
 
-`http http://json-schema.org/learn/examples/address.schema.json | node lib/index.js | jq '.locality|="atoms"'`
+`http https://json-schema.org/learn/examples/address.schema.json | node lib/index.js | jq '.locality|="atoms"'`
 
 
 * Pipe web services
 ```bash
-http http://json-schema.org/learn/examples/address.schema.json | fake-schema | http POST httpbin.org/post
+http https://json-schema.org/learn/examples/address.schema.json | fake-schema | http POST http://bin.org/post
 ```
 
 * Save to file via redirect output
@@ -60,14 +60,14 @@ http http://json-schema.org/learn/examples/address.schema.json | fake-schema | h
 
 The [website-jsf](https://github.com/json-schema-faker/website-jsf) is awesome but I just want to write bash script to populate environments,.
 
- 
-  
+
+
 
 ```bash
 #!/usr/bin/env bash
 
 USER_ID=$(http :8080/swagger.yaml | fake-schema -y -r user | http POST :8080/api/user | jq .id)
-http :8080/swagger.yaml | fake-schema -y -r purchase | jq  "'.user.id|=\"$USER_ID\"'" | http post :8080/api/purchase 
+http :8080/swagger.yaml | fake-schema -y -r purchase | jq  "'.user.id|=\"$USER_ID\"'" | http post :8080/api/purchase
 
 ```
 

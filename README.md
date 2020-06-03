@@ -30,7 +30,7 @@ Based on
 
 ```
 
-## Examples (using [httpie](https://httpie.org/doc) )
+## Examples
 
 * Faking local JSON Schemes
 
@@ -40,11 +40,15 @@ Based on
 
 `cat InnerReferences.yaml | fake-schema -y -l es_MX  | jq .`
 
-* Faking remotes JSON Schemes
-
-` http https://json-schema.org/learn/examples/address.schema.json | fake-schema
-` curl --silent https://json-schema.org/learn/examples/address.schema.json | fake-schema
-
+* Faking remotes JSON Schemes using [httpie](https://httpie.org/doc) 
+```bash
+http https://json-schema.org/learn/examples/address.schema.json | fake-schema
+```
+* Faking remotes JSON Schemes using curl
+```bash
+curl --silent https://json-schema.org/learn/examples/address.schema.json | fake-schema
+```
+## Pipe
 * Update result
 
 `http https://json-schema.org/learn/examples/address.schema.json | node lib/index.js | jq '.locality|="atoms"'`

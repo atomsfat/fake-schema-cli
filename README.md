@@ -25,7 +25,7 @@ Based on
     -y, --yaml                       YAML input
     -h, --help                       output usage information
 
-```-
+```
 
 ## Examples (using [httpie](https://httpie.org/doc) )
 

@@ -1,4 +1,7 @@
-# fake-schema-cli
+# fake-schema-cli 
+
+[![Build Status](https://travis-ci.org/atomsfat/fake-schema-cli.svg?branch=master)](https://travis-ci.org/github/atomsfat/fake-schema-cli)
+[![npm version](https://badge.fury.io/js/fake-schema-cli.svg)](https://badge.fury.io/js/fake-schema-cli)
 
 Another CLI for [json-schema-faker](https://www.npmjs.com/package/json-schema-faker). With Stdin support.
 

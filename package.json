@@ -1,6 +1,6 @@
 {
   "name": "fake-schema-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JSON-Schema-Faker CLI",
   "main": "index.js",
   "scripts": {
@@ -25,10 +25,10 @@
   "author": "Tomás Salazar",
   "license": "MIT",
   "dependencies": {
-    "commander": "^4.1.0",
+    "commander": "^6.2.0",
     "faker": "^4.1.0",
     "get-stdin": "^7.0.0",
-    "json-schema-faker": "^0.5.0-rc24",
+    "json-schema-faker": "^0.5.0-rcv.30",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {

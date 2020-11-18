@@ -1,4 +1,4 @@
-# fake-schema-cli 
+# fake-schema-cli
 
 [![Build Status](https://travis-ci.org/atomsfat/fake-schema-cli.svg?branch=master)](https://travis-ci.org/github/atomsfat/fake-schema-cli)
 [![npm version](https://badge.fury.io/js/fake-schema-cli.svg)](https://badge.fury.io/js/fake-schema-cli)
@@ -16,7 +16,8 @@ Based on
 ## Usage
 
 ```bash
- Usage: fake-schema <file> -y -l es_MX -r user
+
+ Usage: fake-schema address.schema.json
 
   Options:
 
@@ -32,6 +33,10 @@ Based on
 
 ## Examples
 
+* Faking local Yaml Schemes
+
+`fake-schema <file> -y`
+
 * Faking local JSON Schemes
 
 `cat InnerReferences.yaml | fake-schema -y -l es_MX `
@@ -40,7 +45,7 @@ Based on
 
 `cat InnerReferences.yaml | fake-schema -y -l es_MX  | jq .`
 
-* Faking remotes JSON Schemes using [httpie](https://httpie.org/doc) 
+* Faking remotes JSON Schemes using [httpie](https://httpie.org/doc)
 ```bash
 http https://json-schema.org/learn/examples/address.schema.json | fake-schema
 ```

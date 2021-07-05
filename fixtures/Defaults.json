@@ -1,0 +1,13 @@
+{
+  "$id": "https://example.com/address.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A fixture to test default values",
+  "type": "object",
+  "properties": {
+    "country-name": {
+      "type": "string",
+      "default": "Spain"
+    }
+  },
+  "required": [ "country-name" ]
+}

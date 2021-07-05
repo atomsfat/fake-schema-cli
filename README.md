@@ -26,6 +26,7 @@ Based on
     -i, --max-items <n>              Configure a maximum amount of items to generate in an array. This will override the maximum items found inside a JSON Schema
     -m, --max-length <n>             Configure a maximum length to allow generating strings for. This will override the maximum length found inside a JSON Schema
     -p, --optionals-probability <n>  When 0.0, only required properties will be generated; when 1.0, all properties are generated
+    -d, --use-default-value          Use default values
     -y, --yaml                       YAML input
     -h, --help                       output usage information
 
@@ -70,9 +71,7 @@ http https://json-schema.org/learn/examples/address.schema.json | fake-schema | 
 
 ## Motivation
 
-The [website-jsf](https://github.com/json-schema-faker/website-jsf) is awesome but I just want to write bash script to populate environments,.
-
-
+The [website-jsf](https://github.com/json-schema-faker/website-jsf) is awesome but I just want to write bash script to populate environments.
 
 
 ```bash

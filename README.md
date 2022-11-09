@@ -40,11 +40,11 @@ Based on
 
 * Faking local JSON Schemes
 
-`cat InnerReferences.json | fake-schema -y -l es_MX `
+`cat InnerReferences.yaml | fake-schema -y -l es_MX `
 
 * Faking local JSON Schemes with color
 
-`cat InnerReferences.yaml | fake-schema -l es_MX  | jq .`
+`cat InnerReferences.json | fake-schema -l es_MX  | jq .`
 
 * Faking remotes JSON Schemes using [httpie](https://httpie.org/doc)
 ```bash

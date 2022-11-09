@@ -40,7 +40,7 @@ Based on
 
 * Faking local JSON Schemes
 
-`cat InnerReferences.yaml | fake-schema -y -l es_MX `
+`cat InnerReferences.json | fake-schema -y -l es_MX `
 
 * Faking local JSON Schemes with color
 
